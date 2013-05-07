@@ -113,7 +113,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#print the current Mercurial branch on the command line status
+#show branch name in Mercurial repository
 hg_in_repo() {
     hg branch 2> /dev/null | awk '{print "on "}'
 }
